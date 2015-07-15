@@ -147,6 +147,13 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+# Suit
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Django Template',
+    'SEARCH_URL': '',
+
+}
+
 # crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
@@ -154,8 +161,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 PAGINATION_DEFAULT_PAGINATION = 20
 
 # COMPRESSOR
-COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',
-                        'compressor.filters.cssmin.CSSMinFilter']
+COMPRESS_CSS_FILTERS = [
+    'compressor.filters.css_default.CssAbsoluteFilter',
+    'compressor.filters.cssmin.CSSMinFilter'
+]
 
 # CACHE OPS
 CACHEOPS_REDIS = {
