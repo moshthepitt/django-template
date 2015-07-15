@@ -49,7 +49,6 @@ INSTALLED_APPS = (
     # 'allauth.socialaccount.providers.twitter',
     'crispy_forms',
     'debug_toolbar',
-    'pagination',
     'compressor',
     'cacheops',
     'suit_redactor',
@@ -65,7 +64,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     # third party
-    'pagination.middleware.PaginationMiddleware'
 )
 
 
