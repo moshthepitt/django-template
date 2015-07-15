@@ -19,7 +19,6 @@ This starter template gives me the opportunity to as quickly as possible get thr
 * django-allauth
 * django-debug-toolbar
 * django-crispy-forms
-* django-pagination
 * django-compressor
 * django-cacheops
 
