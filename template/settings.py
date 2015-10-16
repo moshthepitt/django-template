@@ -138,7 +138,7 @@ ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_REQUIRED = True
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
-        'SCOPE': ['email', 'publish_stream'],
+        'SCOPE': ['email', 'public_profile', 'user_friends'],
         'METHOD': 'js_sdk'  # instead of 'oauth2'
     }
 }
