@@ -1,3 +1,25 @@
 {% extends "base.html" %}
 
+{% block title %}{% block head_title %}{% endblock %}{% endblock %}
 
+{% block extrahead %}
+  {% block extra_head %}
+  {% endblock %}
+{% endblock %}
+
+{% block all_content %}
+	<div id="main-page">
+	    <div class="row content-section">
+	      <div class="container">
+	        <div class="col-md-12">
+	        	{% block content %}
+	        	{% endblock %}
+	      	</div>	      	
+	    </div>
+    </div>
+{% endblock %}
+
+{% block extrafooter %}
+  {% block extra_body %}
+  {% endblock %}
+{% endblock %}
