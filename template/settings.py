@@ -52,6 +52,11 @@ INSTALLED_APPS = (
     'compressor',
     # 'cacheops',
     'suit_redactor',
+    'django_comments',
+    'mptt',
+    'tagging',
+    'zinnia_bootstrap',
+    'zinnia',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -91,7 +96,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
         ],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
         'OPTIONS': {
             'context_processors': [
                 # default
@@ -107,11 +112,12 @@ TEMPLATES = [
                 "core.context_processors.site_processor",
                 "core.context_processors.debug_processor",
             ],
-            # 'loaders': [
-            #     'django.template.loaders.filesystem.Loader',
-            #     'django.template.loaders.app_directories.Loader',
-            #     'django.template.loaders.eggs.Loader',
-            # ],
+            'loaders': [
+                'app_namespace.Loader',
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader',
+                'django.template.loaders.eggs.Loader',
+            ],
         },
     },
 ]
