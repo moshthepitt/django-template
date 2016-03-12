@@ -52,11 +52,11 @@ INSTALLED_APPS = (
     'compressor',
     # 'cacheops',
     'suit_redactor',
-    'django_comments',
-    'mptt',
-    'tagging',
-    'zinnia_bootstrap',
-    'zinnia',
+    # 'django_comments',
+    # 'mptt',
+    # 'tagging',
+    # 'zinnia_bootstrap',
+    # 'zinnia',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,7 +113,7 @@ TEMPLATES = [
                 "core.context_processors.debug_processor",
             ],
             'loaders': [
-                'app_namespace.Loader',
+                # 'app_namespace.Loader',
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
                 'django.template.loaders.eggs.Loader',
