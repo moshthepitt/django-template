@@ -8,7 +8,7 @@ django-debug-toolbar==1.4
 django-suit==0.2.18
 django-suit-redactor==0.0.4
 funcy==1.7.1
-oauthlib==1.1.0
+oauthlib==1.1.1
 pyinotify==0.9.6
 python-openid==2.2.5
 pytz==2016.4
