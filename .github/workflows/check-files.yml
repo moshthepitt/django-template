@@ -1,0 +1,35 @@
+name: Check files
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  validate:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout current repo
+      uses: actions/checkout@v3
+
+    - name: Get file changes
+      id: file_changes
+      uses: trilom/file-changes-action@v1.2.3
+
+    - name: Show files
+      run: cat $HOME/files.txt
